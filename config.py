@@ -47,8 +47,8 @@ START_PIC = os.environ.get("START_PIC", "https://i.ibb.co/NdWj6GSR/tmpnsm6j-kl.j
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://i.ibb.co/NdWj6GSR/tmpnsm6j-kl.jpg") 
 
 HELP_TXT = "<b>𝑯𝒆𝒍𝒍𝒐!! 𝑊𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 @Anime_Eternals 𝒀𝒐𝒖 𝒏𝒆𝒆𝒅 𝒕𝒐 𝒋𝒐𝒊𝒏 𝒊𝒏 𝒎𝒚 𝑪𝒉𝒂𝒏𝒏𝒆𝒍/𝑮𝒓𝒐𝒖𝒑 𝒇𝒊𝒓𝒔𝒕, 𝑷𝒍𝒆𝒂𝒔𝒆 𝒔𝒖𝒃𝒔𝒄𝒓𝒊𝒃𝒆 𝒕𝒐 𝒐𝒖𝒓 𝒄𝒉𝒂𝒏𝒏𝒆𝒍𝒔 𝒕𝒉𝒓𝒐𝒖𝒈𝒉 𝒕𝒉𝒆 𝒃𝒖𝒕𝒕𝒐𝒏𝒔 𝒃𝒆𝒍𝒐𝒘 𝒂𝒏𝒅 𝒔𝒕𝒂𝒓𝒕 𝒃𝒐𝒕 𝒂𝒈𝒂𝒊𝒏.</b>"
-ABOUT_TXT = "<b>✯ Creator : <a href='https://t.me/TitanContactBot'>This Person</a>\n✯ Language : <code>Python3</code>\n✯ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n✯ Source Code : <a href='https://github.com/TitanXBots/FileStore-Bot'>Click Here</a>\n✯ Channel : @TitanXBots\n✯ Support Group : @TitanMattersSupport</b>"
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+ABOUT_TXT = "○ 𝐍𝐞𝐭𝐰𝐨𝐫𝐤 : <a href='https://t.me/AnimeNexusNetwork'>𝐀𝐧𝐢𝐦𝐞 𝐍𝐞𝐱𝐮𝐬</a>\n○ 𝐀ɴɪᴍᴇ 𝐂ʜᴀɴɴᴇʟ : <a href='https://t.me/Anime_Eternals'>𝐀𝐧𝐢𝐦𝐞 𝐄𝐭𝐞𝐫𝐧𝐚𝐥𝐬</a>\n○ 𝐎ɴɢᴏɪɴɢ 𝐂ʜᴀɴɴᴇʟ : <a href='https://t.me/+VxWwaMA6g_JkNTA9'>𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐀𝐢𝐫𝐢𝐧𝐠𝐬</a>\n○ 𝐀ɴɪᴍᴇ 𝐂ʜᴀᴛ : <a href='https://t.me/Stelleron_Hunter'>𝐒𝐭𝐞𝐥𝐥𝐞𝐫𝐨𝐧 𝐇𝐮𝐧𝐭𝐞𝐫</a></b>"
+START_MSG = os.environ.get("START_MESSAGE", "𝐻𝑒𝑦!! {mention} 𝑊𝑒𝑙𝑐𝑜𝑚𝑒 𝑇𝑜 𝐶𝑜𝑚𝑚𝑢𝑛𝑖𝑡𝑦. 𝐼𝑓 𝑦𝑜𝑢 𝑤𝑎𝑛𝑡 𝑡𝑜 𝑠𝑢𝑝𝑝𝑜𝑟𝑡 𝑜𝑢𝑟 𝑐𝑜𝑚𝑚𝑢𝑛𝑖𝑡𝑦, 𝑦𝑜𝑢 𝑐𝑎𝑛 𝑑𝑜 𝑠𝑜 𝑏𝑦 𝑠𝑢𝑏𝑠𝑐𝑟𝑖𝑏𝑖𝑛𝑔 𝑡𝑜 𝑜𝑢𝑟 𝑐ℎ𝑎𝑛𝑛𝑒𝑙.» @Stelleron_Hunter\n\n 𝑇ℎ𝑎𝑛𝑘𝑠 𝐹𝑜𝑟 𝑦𝑜𝑢𝑟 𝑆𝑢𝑝𝑝𝑜𝑟𝑡")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -57,7 +57,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "</b>𝑯𝒆𝒍𝒍𝒐!! {mention} 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 @Anime_Eternals 𝒀𝒐𝒖 𝒏𝒆𝒆𝒅 𝒕𝒐 𝒋𝒐𝒊𝒏 𝒊𝒏 𝒎𝒚 𝑪𝒉𝒂𝒏𝒏𝒆𝒍/𝑮𝒓𝒐𝒖𝒑 𝒇𝒊𝒓𝒔𝒕, 𝑷𝒍𝒆𝒂𝒔𝒆 𝒔𝒖𝒃𝒔𝒄𝒓𝒊𝒃𝒆 𝒕𝒐 𝒐𝒖𝒓 𝒄𝒉𝒂𝒏𝒏𝒆𝒍𝒔 𝒕𝒉𝒓𝒐𝒖𝒈𝒉 𝒕𝒉𝒆 𝒃𝒖𝒕𝒕𝒐𝒏𝒔 𝒃𝒆𝒍𝒐𝒘 𝒂𝒏𝒅 𝒔𝒕𝒂𝒓𝒕 𝒃𝒐𝒕 𝒂𝒈𝒂𝒊𝒏.</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -75,7 +75,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "👋Hey Friend, 🚫Don't send any messages to me directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(5356695781)
+ADMINS.append(7654385403)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
