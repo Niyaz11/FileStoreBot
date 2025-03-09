@@ -1,9 +1,5 @@
 <p align="center">
   <img src="https://i.ibb.co/LdqH8ChB/tmpycnd0ygf.jpg" alt="Stelleron-FileStore">
-</p>
-<h1 align="center">
-  Stelleron
-</h1>
 
 Telegram Bot to store Posts and Documents and it can Access by Special Links.
 I Guess This Will Be Usefull For Many People.....😇. 
