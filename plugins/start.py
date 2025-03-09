@@ -12,8 +12,8 @@ from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 
 
-titanxofficials = FILE_AUTO_DELETE
-titandeveloper = titanxofficials
+Stelleronxofficials = FILE_AUTO_DELETE
+Stellerondeveloper = Stelleronxofficials
 file_auto_delete = humanize.naturaldelta(Stellerondeveloper)
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
