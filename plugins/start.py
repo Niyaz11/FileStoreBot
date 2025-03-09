@@ -76,13 +76,13 @@ async def start_command(client: Client, message: Message):
                 reply_markup = None
 
             try:
-                titanx_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
-                titanx_msgs.append(titanx_msg)
+                Stelleronx_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
+                Stelleronnx_msgs.append(Stelleronx_msg)
                 
             except FloodWait as e:
                 await asyncio.sleep(e.value)
-                titanx_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
-                titanx_msgs.append(titanx_msg)
+                Stelleron_msg = await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = ParseMode.HTML, reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
+                Stelleronx_msgs.append(Stelleronx_msg)
             except Exception as e:
                 print(f"Error coping message: {e}")
                 pass
