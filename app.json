@@ -6,8 +6,8 @@
     "file",
     "sharing"
   ],
-  "repository": "",
-  "logo": "https://envs.sh/pNw.jpg",
+  "repository": "https://github.com/Kaisan5/NayeonFileStore.git",
+  "logo": "https://i.ibb.co/b5cSDhMn/tmpey3tgesb.jpg",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
