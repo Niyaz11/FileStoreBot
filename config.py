@@ -43,8 +43,8 @@ FORCE_SUB_CHANNEL_4 = int(os.environ.get("FORCE_SUB_CHANNEL_4", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-START_PIC = os.environ.get("START_PIC", "https://i.ibb.co/NdWj6GSR/tmpnsm6j-kl.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://i.ibb.co/NdWj6GSR/tmpnsm6j-kl.jpg") 
+START_PIC = os.environ.get("START_PIC", "https://i.ibb.co/VpJ3QzB9/tmpq8aejh5b.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://i.ibb.co/qLqvhS1r/tmpf4l-1cjy.jpg") 
 
 HELP_TXT = "<b>𝑯𝒆𝒍𝒍𝒐!! 𝑊𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 @Anime_Eternals 𝒀𝒐𝒖 𝒏𝒆𝒆𝒅 𝒕𝒐 𝒋𝒐𝒊𝒏 𝒊𝒏 𝒎𝒚 𝑪𝒉𝒂𝒏𝒏𝒆𝒍/𝑮𝒓𝒐𝒖𝒑 𝒇𝒊𝒓𝒔𝒕, 𝑷𝒍𝒆𝒂𝒔𝒆 𝒔𝒖𝒃𝒔𝒄𝒓𝒊𝒃𝒆\n\n𝐇𝐞𝐥𝐩𝐥𝐢𝐧𝐞 @EternalsHelplineBot</b>"
 ABOUT_TXT = "○ 𝐇𝐞𝐥𝐩𝐥𝐢𝐧𝐞 : <a href='https://t.me/EternalsHelplineBot'>𝐀𝐧𝐢𝐦𝐞 𝐍𝐞𝐱𝐮𝐬</a>\n○ 𝐀ɴɪᴍᴇ 𝐂ʜᴀɴɴᴇʟ : <a href='https://t.me/Anime_Eternals'>𝐀𝐧𝐢𝐦𝐞 𝐄𝐭𝐞𝐫𝐧𝐚𝐥𝐬</a>\n○ 𝐎ɴɢᴏɪɴɢ 𝐂ʜᴀɴɴᴇʟ : <a href='https://t.me/+VxWwaMA6g_JkNTA9'>𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐀𝐢𝐫𝐢𝐧𝐠𝐬</a>\n○ 𝐀ɴɪᴍᴇ 𝐂ʜᴀᴛ : <a href='https://t.me/Stelleron_Hunter'>𝐒𝐭𝐞𝐥𝐥𝐞𝐫𝐨𝐧 𝐇𝐮𝐧𝐭𝐞𝐫</a></b>"
