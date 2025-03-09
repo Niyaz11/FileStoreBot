@@ -14,7 +14,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 titanxofficials = FILE_AUTO_DELETE
 titandeveloper = titanxofficials
-file_auto_delete = humanize.naturaldelta(titandeveloper)
+file_auto_delete = humanize.naturaldelta(Stellerondeveloper)
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
             return
         await temp_msg.delete()
 
-        titanx_msgs = [] # List to keep track of sent message 
+        Stelleronx_msgs = [] # List to keep track of sent message 
 
         for msg in messages:
 
@@ -97,8 +97,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🧠 ʜᴇʟᴘ", callback_data = "help"),
-                    InlineKeyboardButton("🔰 ᴀʙᴏᴜᴛ", callback_data = "about")
+                    InlineKeyboardButton(" ʜᴇʟᴘ", callback_data = "help"),
+                    InlineKeyboardButton(" ᴀʙᴏᴜᴛ", callback_data = "about")
                 ]
             ]
         )
@@ -247,7 +247,4 @@ async def delete_files(messages, client, k):
               logging.error(f"An unexpected error occurred: {e}")
             
 
-# Dont Remove Credit
-# Update Channel - TitanXBots
-# Ask Any Doubt on Telegram - @TitanOwner
-# Support Group - @TitanMattersSupport
+#@Stelleron_Hunter
