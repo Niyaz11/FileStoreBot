@@ -1,6 +1,4 @@
-#TitanXBots
-#Credit
-#yash
+#@Stelleron_Hunter
 
 
 
