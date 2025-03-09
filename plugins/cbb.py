@@ -1,6 +1,4 @@
-# Dont Remove Credit
-# Update Channel - TitanXBots
-# Ask Any Doubt on Telegram - @TitanOwner
+#@Stelleron_Hunter
 
 from pyrogram import Client
 from bot import Bot
