@@ -17,3 +17,4 @@ async def stats(bot: Bot, message: Message):
 async def useless(_,message: Message):
     if USER_REPLY_TEXT:
         await message.reply(USER_REPLY_TEXT)
+#@Stelleron_Hunter
