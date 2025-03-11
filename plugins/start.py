@@ -240,7 +240,7 @@ async def delete_files(messages, client, k):
 
     # Edit message with the button
         try:
-            await k.edit_text("𝑇ℎ𝑎𝑛𝑘𝑠 𝐹𝑜𝑟 𝑦𝑜𝑢𝑟 𝑆𝑢𝑝𝑝𝑜𝑟𝑡 @Ecchi_Dex", reply_markup=keyboard)
+            await k.edit_text("𝑇ℎ𝑎𝑛𝑘𝑠 𝐹𝑜𝑟 𝑦𝑜𝑢𝑟 𝑆𝑢𝑝𝑝𝑜𝑟𝑡 @Anime_Eternals", reply_markup=keyboard)
         except Exception as e:
               logging.error(f"Error editing the message: {e}")
         except Exception as e:
