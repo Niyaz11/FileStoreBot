@@ -43,8 +43,8 @@ FORCE_SUB_CHANNEL_4 = int(os.environ.get("FORCE_SUB_CHANNEL_4", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-START_PIC = os.environ.get("START_PIC", "https://files.catbox.moe/oyfshp")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://files.catbox.moe/oyfshp") 
+START_PIC = os.environ.get("START_PIC", "https://files.catbox.moe/slqlf5")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://files.catbox.moe/slqlf5") 
 
 HELP_TXT = "<b>𝑯𝒆𝒍𝒍𝒐!! 𝑊𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 @Anime_expres 𝒀𝒐𝒖 𝒏𝒆𝒆𝒅 𝒕𝒐 𝒋𝒐𝒊𝒏 𝒊𝒏 𝒎𝒚 𝑪𝒉𝒂𝒏𝒏𝒆𝒍/𝑮𝒓𝒐𝒖𝒑 𝒇𝒊𝒓𝒔𝒕, 𝑷𝒍𝒆𝒂𝒔𝒆 𝒔𝒖𝒃𝒔𝒄𝒓𝒊𝒃𝒆\n\n𝐇𝐞𝐥𝐩𝐥𝐢𝐧𝐞 @anime_chat_expres</b>"
 ABOUT_TXT = "𝐀𝐧𝐢𝐦𝐞 𝐂ʜᴀᴛ : <a href='https://t.me/anime_chat_expres'>𝐀𝐧𝐢𝐦𝐞 </a>\n○ 𝐀ɴɪᴍᴇ 𝐂ʜᴀɴɴᴇʟ : <a href='https://t.me/Anime_expres'>𝐀𝐧𝐢𝐦𝐞 𝐄𝐭𝐞𝐫𝐧𝐚𝐥𝐬</a>\n○ 𝐎ɴɢᴏɪɴɢ 𝐂ʜᴀɴɴᴇʟ : <a href='https://t.me/ongoing_anime_expres'>𝐎𝐧𝐠𝐨𝐢𝐧𝐠 </a></b>"
