@@ -16,7 +16,7 @@ Stelleronxofficials = FILE_AUTO_DELETE
 Stellerondeveloper = Stelleronxofficials
 file_auto_delete = humanize.naturaldelta(Stellerondeveloper)
 
-@Bot.on_message(filters.command('start') & filters.private & subscribed)
+@Bot.on_message(filters.command('start') & subscribed)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
     if not await present_user(id):
@@ -127,7 +127,7 @@ REPLY_ERROR = "<code>Use this command as a reply to any telegram message without
 
     
     
-@Bot.on_message(filters.command('start') & filters.private)
+@Bot.on_message(filters.command('start'))
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
