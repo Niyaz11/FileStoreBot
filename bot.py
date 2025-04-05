@@ -4,7 +4,7 @@ from pyrogram import Client
 from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
-from config import API_HASH, APP_ID, LOGGER, BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, CHANNEL_ID, PORT, ADMINS, SUDO_USERS, OWNER_ID
+from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL_1, FORCE_SUB_CHANNEL_2, FORCE_SUB_CHANNEL_3, FORCE_SUB_CHANNEL_4, CHANNEL_ID, PORT
 import pyrogram.utils
 from utils import update_saved_button_state
 import asyncio
@@ -34,12 +34,15 @@ class Bot(Client):
         super().__init__(
             name="Bot",
             api_hash=API_HASH,
-            api_id=API_ID,
-            plugins={"root": "plugins"},
+            api_id=APP_ID,
+            plugins={
+                "root": "plugins"
+            },
             workers=TG_BOT_WORKERS,
-            bot_token=BOT_TOKEN
+            bot_token=TG_BOT_TOKEN
         )
         self.LOGGER = LOGGER
+
 
     async def start(self):
         global saving_message  # Ensure saving_message is accessible
