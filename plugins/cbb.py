@@ -63,3 +63,26 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             await query.message.reply_to_message.delete()
         except:
             pass
+
+from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+
+@Client.on_message(filters.command("help"))
+async def help_command(client: Client, message: Message):
+    text = (
+        "<b>Need some help? Here's what I can do:</b>\n\n"
+        "<b>/start</b> - Start the bot or get posts\n"
+        "<b>/batch</b> - Generate links for multiple posts\n"
+        "<b>/genlink</b> - Create a link for a single post\n"
+        "<b>/id</b> - Get your Telegram ID\n"
+        "<b>/users</b> - View total bot users\n"
+        "<b>/broadcast</b> - Send a message to all users (Admin only)\n"
+        "<b>/stats</b> - Show bot uptime and usage stats"
+    )
+
+    reply_markup = InlineKeyboardMarkup([
+        [InlineKeyboardButton("❌ Close", callback_data="close")]
+    ])
+
+    await message.reply(text, reply_markup=reply_markup)
+    
