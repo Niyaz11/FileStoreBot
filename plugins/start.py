@@ -248,7 +248,7 @@ async def delete_files(messages, client, k):
             
 @Client.on_message(filters.command("admins"))
 async def list_admins(client, message):
-    if message.from_user.id not in get_admins() + SUDO_USERS:
+    if message.from_user.id not in ADMINS:
         return await message.reply_text("<b>Tere aukat ka nahi hai.</b>")
 
     temp_mssg = await message.reply_text("<blockquote>🔍 Fetching admins...</blockquote>")
