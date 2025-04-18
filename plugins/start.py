@@ -246,6 +246,19 @@ async def delete_files(messages, client, k):
         except Exception as e:
               logging.error(f"An unexpected error occurred: {e}")
             
+@Bot.on_message(filters.command("admins"))
+async def show_admins(client, message):
+    if message.from_user.id not in ADMINS:
+        return await message.reply_text(
+            "<b>Tere aukat ka nahi hai.</b>",
+            parse_mode="html"
+        )
+
+    text = "<b>Bot Admins List:</b>\n\n"
+    for i, admin_id in enumerate(ADMINS, start=1):
+        text += f"<b>{i}.</b> <a href='tg://openmessage?user_id={admin_id}'>{user.first_name}</a>\n```<code>{admin_id}</code>```\n"
+    
+    await message.reply_text(text, parse_mode="html")
 
 @Bot.on_message(filters.command('id'))
 async def get_id(client: Bot, message: Message):
