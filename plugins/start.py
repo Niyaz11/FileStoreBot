@@ -10,7 +10,7 @@ from bot import Bot
 from config import *
 from helper_func import subscribed, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
-
+import logging
 
 Stelleronxofficials = FILE_AUTO_DELETE
 Stellerondeveloper = Stelleronxofficials
@@ -246,19 +246,34 @@ async def delete_files(messages, client, k):
         except Exception as e:
               logging.error(f"An unexpected error occurred: {e}")
             
-@Bot.on_message(filters.command("admins"))
-async def show_admins(client, message):
-    if message.from_user.id not in ADMINS:
-        return await message.reply_text(
-            "<b>Tere aukat ka nahi hai.</b>",
-            parse_mode="html"
-        )
+@Client.on_message(filters.command("admins"))
+async def list_admins(client, message):
+    if message.from_user.id not in get_admins() + SUDO_USERS:
+        return await message.reply_text("<b>Tere aukat ka nahi hai.</b>")
 
-    text = "<b>Bot Admins List:</b>\n\n"
-    for i, admin_id in enumerate(ADMINS, start=1):
-        text += f"<b>{i}.</b> <a href='tg://openmessage?user_id={admin_id}'>{user.first_name}</a>\n```<code>{admin_id}</code>```\n"
-    
-    await message.reply_text(text, parse_mode="html")
+    temp_mssg = await message.reply_text("<blockquote>🔍 Fetching admins...</blockquote>")
+
+    unique_admins = list(set(ADMINS))  # Remove duplicate IDs
+    admins_list = []
+
+    for index, admin_id in enumerate(unique_admins, start=1):
+        try:
+            user = await client.get_users(admin_id)  # Fetch user details
+            admin_name = f"<a href='tg://openmessage?user_id={admin_id}'>{user.first_name}</a>"
+        except Exception:
+            admin_name = "<b>Bot not started</b>"
+
+        admins_list.append(f"<b>{index}.</b> {admin_name} : <pre>{admin_id}</pre>")
+
+    if not admins_list:
+        return await temp_mssg.edit_text("<blockquote>No admins found!</blockquote>")
+
+    admin_text = "<b>Bot Admins list:</b>\n\n" + "\n".join(admins_list)
+
+    # Close button
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔒 Close", callback_data="close")]])
+
+    await temp_mssg.edit_text(admin_text, disable_web_page_preview=True, reply_markup=reply_markup)
 
 @Bot.on_message(filters.command('id'))
 async def get_id(client: Bot, message: Message):
